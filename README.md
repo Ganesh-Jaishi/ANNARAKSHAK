@@ -53,19 +53,25 @@ flowchart TD
 
 ## 📸 Screenshots
 
-> **Note:** Place your actual application screenshots in a `docs/images/` directory in the repository to display them here.
+### 1. Donor Institution: Item Registration
+![Donor Item Register](docs/donor%20item%20register.png)
+*A streamlined interface for donor institutions to log surplus food batches.*
 
-### 1. Donor Institution Dashboard
-![Donor Dashboard](docs/images/donor_dashboard.png)
-*A centralized view for donor institutions to log surplus food, inspect AI condition ratings, and verify active dispatches.*
+### 2. Donor Institution: Live Tracking
+![Donor Live Tracking](docs/donorlive%20tracking.png)
+*Real-time GPS tracking and dispatch telemetry for outbound surplus food.*
 
-### 2. Redistribution Partner View
-![Receiver Interface](docs/images/receiver_dashboard.png)
-*Redistribution partners receive high-priority matches with 1-click acceptance and a real-time capacity intake tracker.*
+### 3. Redistribution Partner: Incoming Food
+![Receiver Incoming Food](docs/receiver%20incoming%20food.png)
+*Redistribution partners receive high-priority matches with 1-click acceptance capabilities.*
 
-### 3. National Admin / ESG Reports
-![National Admin Heatmap](docs/images/admin_heatmap.png)
-*High-level administrative oversight featuring an India-wide GIS heatmap and carbon & water savings reports.*
+### 4. Redistribution Partner: Track Delivery
+![Receiver Track Delivery](docs/receiver%20track%20delivery.png)
+*Live capacity tracking and driver coordination for incoming food deliveries.*
+
+### 5. National Admin: Institution Dashboard
+![Admin Institution List](docs/admin_institute%20list.png)
+*High-level administrative oversight for civil supplies and ESG certification auditors.*
 
 ---
 
@@ -85,7 +91,18 @@ git clone https://github.com/TeamDireWolf/Annarakshak.git
 cd Annarakshak
 ```
 
-### 2. Backend Setup
+### 2. Run with Docker (Recommended)
+If you have Docker and Docker Compose installed, you can spin up the entire stack with a single command:
+
+```bash
+docker-compose up --build
+```
+*The frontend will be available at `http://localhost:5173` and the backend at `http://localhost:8000`.*
+
+---
+### 3. Manual Setup (Alternative)
+
+#### Backend Setup
 Navigate to the backend directory, install dependencies, and start the FastAPI server.
 
 ```bash
